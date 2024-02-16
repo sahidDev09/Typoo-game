@@ -29,7 +29,7 @@
           class="flex flex-col items-center gap-5 min-h-screen justify-center">
           <h1 class="main text-8xl font-anton uppercase">Alpha Clash pro</h1>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-          <button onclick="play()" class="btn bg-white text-black">
+          <button onclick="myplay()" class="btn bg-white text-black">
             Play Now
           </button>
         </div>
@@ -50,6 +50,7 @@
               class="uppercase font-extrabold text-7xl text-black text-center flex justify-center min-h-full items-center">
               Waiting..
             </p>
+            <p class="display-score"></p>
           </div>
         </div>
 
@@ -82,7 +83,7 @@
             <kbd id="z" class="kbd">z</kbd>
             <kbd id="x" class="kbd">x</kbd>
             <kbd id="c" class="kbd">c</kbd>
-            <kbd id="v" class="kbd">v</kbd>
+            <kbd id="v" g class="kbd">v</kbd>
             <kbd id="b" class="kbd">b</kbd>
             <kbd id="n" class="kbd">n</kbd>
             <kbd id="m" class="kbd">m</kbd>
@@ -92,16 +93,16 @@
         <!-- life/score -->
 
         <div class="flex justify-between container mx-auto mt-10 px-32">
-          <button class="btn bg-[#894189] border-none text-white font-bold">
+          <button class="btn bg-[#b6067b] border-none text-white font-bold">
             Life
             <img src="images/heart.svg" alt="" />
-            <span>1</span>
+            <span id="life-span">5</span>
           </button>
 
           <button class="btn bg-[#894189] border-none text-white font-bold">
             score
             <img src="images/dollor.svg" alt="" />
-            <span>10</span>
+            <p id="my-score">0</p>
           </button>
         </div>
       </section>
@@ -123,6 +124,7 @@
     </main>
     <footer></footer>
 
+    <script src="utility.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
